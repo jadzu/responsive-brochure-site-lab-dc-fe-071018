@@ -3,19 +3,20 @@
   --primary: #FBFBFB;
   --dark: #333;
   --light: #fff;
-  --purple: #0B3C5D;
+  --highlight: #2D3047;
+  --purple: #2E4052;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
 html {
   box-sizing: border-box;
-  font-family: Roboto;
+  font-family: Montserrat;
   color: var(--dark);
 }
 
 body {
   background: #fff;
-  margin: 30px 50px;
+  margin: 30px;
   line-height: 1.4;
 }
 
@@ -29,7 +30,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 	max-width: 960px;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 
 /* Navigation */
@@ -74,9 +75,8 @@ text-align: center;
 /* Showcase */
 .showcase {
   grid-area: showcase;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   overflow: hidden;
-  box-shadow: ;
   /* flex-direction: row; */
 }
 
@@ -117,11 +117,13 @@ text-align: center;
 
 .intro h1 {
   font-size: 1.75rem;
+  font-weight: normal;
   text-transform: uppercase;
   margin: 0;
   padding: 10px 10px 7px 10px;
-  color: var(--dark);
-  background: #FEDC3D;
+  color: var(--light);
+  background: var(--highlight);
+  letter-spacing: 2px;
   /* transulecent background of text
   background: rgba(204, 204, 204, 0.5);*/
 }
@@ -131,14 +133,14 @@ text-align: center;
   margin-bottom: 0;
   padding: 0px 10px 10px 10px;
   color: var(--dark);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.5em;
 }
 
 .button {
-  background: var(--purple);
-  color: var(--light);
-  padding: 0.6rem 1.2rem;
+  background: #FBA100;
+  color: var(--dark);
+  padding: 0.5rem 1.1rem;
   text-decoration: none;
   border: 0;
   margin: 0px 10px 10px 0px;
@@ -156,7 +158,7 @@ text-align: center;
 
 .social-media h2 {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0px 0px 10px 0px;
   color: var(--dark);
 }
@@ -169,7 +171,7 @@ text-align: center;
   margin: 0px 3px 2px;
   text-align: center;
   text-decoration: none;
-  background: #0B2545;
+  background: #07889B;
   color: var(--light);
   font-size: 1.5rem;
 }
@@ -181,7 +183,7 @@ text-align: center;
 /*Top Container, code should be like like .boxes*/
 .top-container {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   grid-template-areas:
   'showcase showcase showcase intro'
   'showcase showcase showcase social-media';
@@ -210,23 +212,23 @@ h3 {
 }
 
 h3 span {
-  background: rgb(0, 0, 0); /* fallback color */
-  background: #FEDC3D;
-  color: var(--dark);
+  background: var(--highlight);
+  font-weight: normal;
+  color: var(--light);
   padding: 0.5rem .75rem;
 }
 
 .bottom-box p {
   padding: 10px;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5em;
 }
 
 /* .boxes / Bottom containers */
 .boxes {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   grid-template-areas:
   'bottom-box-a bottom-box-b'
   'bottom-box-a bottom-box-c';
